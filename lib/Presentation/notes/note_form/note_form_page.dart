@@ -3,6 +3,7 @@ import 'package:dartz/dartz.dart';
 import 'package:ddd_training/Application/notes/note_form/note_form_bloc.dart';
 import 'package:ddd_training/Presentation/notes/note_form/widgets/add_todo_widget.dart';
 import 'package:ddd_training/Presentation/notes/note_form/misc/todo_item_presentation_classes.dart';
+import 'package:ddd_training/Presentation/notes/note_form/widgets/todo_list_widget.dart';
 import 'package:ddd_training/Presentation/routes/app_router.dart';
 import 'package:provider/provider.dart';
 import 'widgets/color_field_widget.dart';
@@ -136,6 +137,7 @@ class NoteFormPageScaffold extends StatelessWidget {
                 children: const [
                   FormBodyFieldWidget(),
                   ColorFieldWidget(),
+                  TodoListWidget(),
                   AddTodoWidget(),
                 ],
               ),
