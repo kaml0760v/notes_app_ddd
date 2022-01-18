@@ -7,7 +7,9 @@ import 'Presentation/signIn/widgets/app_widget.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp()
+  .then((value) => print("connected " + value.options.asMap.toString()))
+  .catchError((e) => print(e.toString()));
   configureInjection(Environment.prod);
   runApp(AppWidget());
 }

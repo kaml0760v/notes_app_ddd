@@ -17,11 +17,17 @@ class NoteActorBloc extends Bloc<NoteActorEvent, NoteActorState> {
 
   @override
   Stream<NoteActorState> mapEventToState(NoteActorEvent event) async* {
-    event.map(deleted: (e) async* {
-      yield const NoteActorState.actionProgress();
-      final possibleFailure = await _iNoteRepository.delete(e.note);
-      yield possibleFailure.fold(
-          (l) => NoteActorState.deleteFailure(l), (_) => const NoteActorState.deleteSuccess());
-    });
+    yield const NoteActorState.actionProgress();
+    final possibleFailure = await _iNoteRepository.delete(event.note);
+    yield possibleFailure.fold(
+      (f) => NoteActorState.deleteFailure(f),
+      (_) => const NoteActorState.deleteSuccess(),
+    );
+    // event.map(deleted: (e) async* {
+    //   yield const NoteActorState.actionProgress();
+    //   final possibleFailure = await _iNoteRepository.delete(e.note);
+    //   yield possibleFailure.fold(
+    //       (l) => NoteActorState.deleteFailure(l), (_) => const NoteActorState.deleteSuccess());
+    // });
   }
 }

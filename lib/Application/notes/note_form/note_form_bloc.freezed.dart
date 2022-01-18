@@ -35,7 +35,7 @@ class _$NoteFormEventTearOff {
     );
   }
 
-  _TodoChanged todoChanged(KtList<TodoItemDto> todo) {
+  _TodoChanged todoChanged(KtList<TodoItemPrimitive> todo) {
     return _TodoChanged(
       todo,
     );
@@ -56,7 +56,7 @@ mixin _$NoteFormEvent {
     required TResult Function(Option<Note> body) initialized,
     required TResult Function(String body) bodyChanged,
     required TResult Function(Color color) colorChanged,
-    required TResult Function(KtList<TodoItemDto> todo) todoChanged,
+    required TResult Function(KtList<TodoItemPrimitive> todo) todoChanged,
     required TResult Function() saved,
   }) =>
       throw _privateConstructorUsedError;
@@ -65,7 +65,7 @@ mixin _$NoteFormEvent {
     TResult Function(Option<Note> body)? initialized,
     TResult Function(String body)? bodyChanged,
     TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemDto> todo)? todoChanged,
+    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
     TResult Function()? saved,
   }) =>
       throw _privateConstructorUsedError;
@@ -74,7 +74,7 @@ mixin _$NoteFormEvent {
     TResult Function(Option<Note> body)? initialized,
     TResult Function(String body)? bodyChanged,
     TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemDto> todo)? todoChanged,
+    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
     TResult Function()? saved,
     required TResult orElse(),
   }) =>
@@ -193,7 +193,7 @@ class _$_Initialized implements _Initialized {
     required TResult Function(Option<Note> body) initialized,
     required TResult Function(String body) bodyChanged,
     required TResult Function(Color color) colorChanged,
-    required TResult Function(KtList<TodoItemDto> todo) todoChanged,
+    required TResult Function(KtList<TodoItemPrimitive> todo) todoChanged,
     required TResult Function() saved,
   }) {
     return initialized(body);
@@ -205,7 +205,7 @@ class _$_Initialized implements _Initialized {
     TResult Function(Option<Note> body)? initialized,
     TResult Function(String body)? bodyChanged,
     TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemDto> todo)? todoChanged,
+    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
     TResult Function()? saved,
   }) {
     return initialized?.call(body);
@@ -217,7 +217,7 @@ class _$_Initialized implements _Initialized {
     TResult Function(Option<Note> body)? initialized,
     TResult Function(String body)? bodyChanged,
     TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemDto> todo)? todoChanged,
+    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
     TResult Function()? saved,
     required TResult orElse(),
   }) {
@@ -344,7 +344,7 @@ class _$_BodyChanged implements _BodyChanged {
     required TResult Function(Option<Note> body) initialized,
     required TResult Function(String body) bodyChanged,
     required TResult Function(Color color) colorChanged,
-    required TResult Function(KtList<TodoItemDto> todo) todoChanged,
+    required TResult Function(KtList<TodoItemPrimitive> todo) todoChanged,
     required TResult Function() saved,
   }) {
     return bodyChanged(body);
@@ -356,7 +356,7 @@ class _$_BodyChanged implements _BodyChanged {
     TResult Function(Option<Note> body)? initialized,
     TResult Function(String body)? bodyChanged,
     TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemDto> todo)? todoChanged,
+    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
     TResult Function()? saved,
   }) {
     return bodyChanged?.call(body);
@@ -368,7 +368,7 @@ class _$_BodyChanged implements _BodyChanged {
     TResult Function(Option<Note> body)? initialized,
     TResult Function(String body)? bodyChanged,
     TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemDto> todo)? todoChanged,
+    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
     TResult Function()? saved,
     required TResult orElse(),
   }) {
@@ -496,7 +496,7 @@ class _$_ColorChanged implements _ColorChanged {
     required TResult Function(Option<Note> body) initialized,
     required TResult Function(String body) bodyChanged,
     required TResult Function(Color color) colorChanged,
-    required TResult Function(KtList<TodoItemDto> todo) todoChanged,
+    required TResult Function(KtList<TodoItemPrimitive> todo) todoChanged,
     required TResult Function() saved,
   }) {
     return colorChanged(color);
@@ -508,7 +508,7 @@ class _$_ColorChanged implements _ColorChanged {
     TResult Function(Option<Note> body)? initialized,
     TResult Function(String body)? bodyChanged,
     TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemDto> todo)? todoChanged,
+    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
     TResult Function()? saved,
   }) {
     return colorChanged?.call(color);
@@ -520,7 +520,7 @@ class _$_ColorChanged implements _ColorChanged {
     TResult Function(Option<Note> body)? initialized,
     TResult Function(String body)? bodyChanged,
     TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemDto> todo)? todoChanged,
+    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
     TResult Function()? saved,
     required TResult orElse(),
   }) {
@@ -585,7 +585,7 @@ abstract class _$TodoChangedCopyWith<$Res> {
   factory _$TodoChangedCopyWith(
           _TodoChanged value, $Res Function(_TodoChanged) then) =
       __$TodoChangedCopyWithImpl<$Res>;
-  $Res call({KtList<TodoItemDto> todo});
+  $Res call({KtList<TodoItemPrimitive> todo});
 }
 
 /// @nodoc
@@ -606,7 +606,7 @@ class __$TodoChangedCopyWithImpl<$Res> extends _$NoteFormEventCopyWithImpl<$Res>
       todo == freezed
           ? _value.todo
           : todo // ignore: cast_nullable_to_non_nullable
-              as KtList<TodoItemDto>,
+              as KtList<TodoItemPrimitive>,
     ));
   }
 }
@@ -617,7 +617,7 @@ class _$_TodoChanged implements _TodoChanged {
   const _$_TodoChanged(this.todo);
 
   @override
-  final KtList<TodoItemDto> todo;
+  final KtList<TodoItemPrimitive> todo;
 
   @override
   String toString() {
@@ -647,7 +647,7 @@ class _$_TodoChanged implements _TodoChanged {
     required TResult Function(Option<Note> body) initialized,
     required TResult Function(String body) bodyChanged,
     required TResult Function(Color color) colorChanged,
-    required TResult Function(KtList<TodoItemDto> todo) todoChanged,
+    required TResult Function(KtList<TodoItemPrimitive> todo) todoChanged,
     required TResult Function() saved,
   }) {
     return todoChanged(todo);
@@ -659,7 +659,7 @@ class _$_TodoChanged implements _TodoChanged {
     TResult Function(Option<Note> body)? initialized,
     TResult Function(String body)? bodyChanged,
     TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemDto> todo)? todoChanged,
+    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
     TResult Function()? saved,
   }) {
     return todoChanged?.call(todo);
@@ -671,7 +671,7 @@ class _$_TodoChanged implements _TodoChanged {
     TResult Function(Option<Note> body)? initialized,
     TResult Function(String body)? bodyChanged,
     TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemDto> todo)? todoChanged,
+    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
     TResult Function()? saved,
     required TResult orElse(),
   }) {
@@ -723,9 +723,9 @@ class _$_TodoChanged implements _TodoChanged {
 }
 
 abstract class _TodoChanged implements NoteFormEvent {
-  const factory _TodoChanged(KtList<TodoItemDto> todo) = _$_TodoChanged;
+  const factory _TodoChanged(KtList<TodoItemPrimitive> todo) = _$_TodoChanged;
 
-  KtList<TodoItemDto> get todo;
+  KtList<TodoItemPrimitive> get todo;
   @JsonKey(ignore: true)
   _$TodoChangedCopyWith<_TodoChanged> get copyWith =>
       throw _privateConstructorUsedError;
@@ -772,7 +772,7 @@ class _$_Saved implements _Saved {
     required TResult Function(Option<Note> body) initialized,
     required TResult Function(String body) bodyChanged,
     required TResult Function(Color color) colorChanged,
-    required TResult Function(KtList<TodoItemDto> todo) todoChanged,
+    required TResult Function(KtList<TodoItemPrimitive> todo) todoChanged,
     required TResult Function() saved,
   }) {
     return saved();
@@ -784,7 +784,7 @@ class _$_Saved implements _Saved {
     TResult Function(Option<Note> body)? initialized,
     TResult Function(String body)? bodyChanged,
     TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemDto> todo)? todoChanged,
+    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
     TResult Function()? saved,
   }) {
     return saved?.call();
@@ -796,7 +796,7 @@ class _$_Saved implements _Saved {
     TResult Function(Option<Note> body)? initialized,
     TResult Function(String body)? bodyChanged,
     TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemDto> todo)? todoChanged,
+    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
     TResult Function()? saved,
     required TResult orElse(),
   }) {
@@ -857,7 +857,7 @@ class _$NoteFormStateTearOff {
 
   _NoteFormState call(
       {required Note note,
-      required bool showErrorMessages,
+      required AutovalidateMode showErrorMessages,
       required bool isSaving,
       required bool isEditing,
       required Option<Either<NoteFailure, Unit>> saveFailureOrSuccess}) {
@@ -877,7 +877,7 @@ const $NoteFormState = _$NoteFormStateTearOff();
 /// @nodoc
 mixin _$NoteFormState {
   Note get note => throw _privateConstructorUsedError;
-  bool get showErrorMessages => throw _privateConstructorUsedError;
+  AutovalidateMode get showErrorMessages => throw _privateConstructorUsedError;
   bool get isSaving => throw _privateConstructorUsedError;
   bool get isEditing => throw _privateConstructorUsedError;
   Option<Either<NoteFailure, Unit>> get saveFailureOrSuccess =>
@@ -895,7 +895,7 @@ abstract class $NoteFormStateCopyWith<$Res> {
       _$NoteFormStateCopyWithImpl<$Res>;
   $Res call(
       {Note note,
-      bool showErrorMessages,
+      AutovalidateMode showErrorMessages,
       bool isSaving,
       bool isEditing,
       Option<Either<NoteFailure, Unit>> saveFailureOrSuccess});
@@ -928,7 +928,7 @@ class _$NoteFormStateCopyWithImpl<$Res>
       showErrorMessages: showErrorMessages == freezed
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as AutovalidateMode,
       isSaving: isSaving == freezed
           ? _value.isSaving
           : isSaving // ignore: cast_nullable_to_non_nullable
@@ -961,7 +961,7 @@ abstract class _$NoteFormStateCopyWith<$Res>
   @override
   $Res call(
       {Note note,
-      bool showErrorMessages,
+      AutovalidateMode showErrorMessages,
       bool isSaving,
       bool isEditing,
       Option<Either<NoteFailure, Unit>> saveFailureOrSuccess});
@@ -997,7 +997,7 @@ class __$NoteFormStateCopyWithImpl<$Res>
       showErrorMessages: showErrorMessages == freezed
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as AutovalidateMode,
       isSaving: isSaving == freezed
           ? _value.isSaving
           : isSaving // ignore: cast_nullable_to_non_nullable
@@ -1027,7 +1027,7 @@ class _$_NoteFormState implements _NoteFormState {
   @override
   final Note note;
   @override
-  final bool showErrorMessages;
+  final AutovalidateMode showErrorMessages;
   @override
   final bool isSaving;
   @override
@@ -1072,7 +1072,7 @@ class _$_NoteFormState implements _NoteFormState {
 abstract class _NoteFormState implements NoteFormState {
   const factory _NoteFormState(
           {required Note note,
-          required bool showErrorMessages,
+          required AutovalidateMode showErrorMessages,
           required bool isSaving,
           required bool isEditing,
           required Option<Either<NoteFailure, Unit>> saveFailureOrSuccess}) =
@@ -1081,7 +1081,7 @@ abstract class _NoteFormState implements NoteFormState {
   @override
   Note get note;
   @override
-  bool get showErrorMessages;
+  AutovalidateMode get showErrorMessages;
   @override
   bool get isSaving;
   @override

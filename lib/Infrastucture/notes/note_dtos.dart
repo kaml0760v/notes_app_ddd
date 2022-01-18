@@ -14,6 +14,7 @@ part 'note_dtos.g.dart';
 abstract class NoteDto implements _$NoteDto {
   const NoteDto._();
   const factory NoteDto({
+    // ignore: invalid_annotation_target
     @JsonKey(ignore: true) @Default('') String id,
     required String body,
     required int color,
