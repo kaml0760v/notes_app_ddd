@@ -19,38 +19,64 @@ class _$AppRouter extends RootStackRouter {
   final Map<String, PageFactory> pagesMap = {
     SignInRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
-          routeData: routeData, child: const SignInPage());
+        routeData: routeData,
+        child: const SignInPage(),
+      );
     },
     NotesOverviewRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
-          routeData: routeData, child: const NotesOverviewPage());
+        routeData: routeData,
+        child: const NotesOverviewPage(),
+      );
     },
     NoteFormRoute.name: (routeData) {
       final args = routeData.argsAs<NoteFormRouteArgs>();
       return MaterialPageX<dynamic>(
-          routeData: routeData,
-          child: NoteFormPage(key: args.key, editedNote: args.editedNote),
-          fullscreenDialog: true);
+        routeData: routeData,
+        child: NoteFormPage(
+          key: args.key,
+          editedNote: args.editedNote,
+        ),
+        fullscreenDialog: true,
+      );
     },
     SplashRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
-          routeData: routeData, child: const SplashPage());
-    }
+        routeData: routeData,
+        child: const SplashPage(),
+      );
+    },
   };
 
   @override
   List<RouteConfig> get routes => [
-        RouteConfig(SignInRoute.name, path: '/sign-in-page'),
-        RouteConfig(NotesOverviewRoute.name, path: '/notes-overview-page'),
-        RouteConfig(NoteFormRoute.name, path: '/note-form-page'),
-        RouteConfig(SplashRoute.name, path: '/')
+        RouteConfig(
+          SignInRoute.name,
+          path: '/sign-in-page',
+        ),
+        RouteConfig(
+          NotesOverviewRoute.name,
+          path: '/notes-overview-page',
+        ),
+        RouteConfig(
+          NoteFormRoute.name,
+          path: '/note-form-page',
+        ),
+        RouteConfig(
+          SplashRoute.name,
+          path: '/',
+        ),
       ];
 }
 
 /// generated route for
 /// [SignInPage]
 class SignInRoute extends PageRouteInfo<void> {
-  const SignInRoute() : super(SignInRoute.name, path: '/sign-in-page');
+  const SignInRoute()
+      : super(
+          SignInRoute.name,
+          path: '/sign-in-page',
+        );
 
   static const String name = 'SignInRoute';
 }
@@ -59,7 +85,10 @@ class SignInRoute extends PageRouteInfo<void> {
 /// [NotesOverviewPage]
 class NotesOverviewRoute extends PageRouteInfo<void> {
   const NotesOverviewRoute()
-      : super(NotesOverviewRoute.name, path: '/notes-overview-page');
+      : super(
+          NotesOverviewRoute.name,
+          path: '/notes-overview-page',
+        );
 
   static const String name = 'NotesOverviewRoute';
 }
@@ -67,16 +96,26 @@ class NotesOverviewRoute extends PageRouteInfo<void> {
 /// generated route for
 /// [NoteFormPage]
 class NoteFormRoute extends PageRouteInfo<NoteFormRouteArgs> {
-  NoteFormRoute({Key? key, required dynamic editedNote})
-      : super(NoteFormRoute.name,
-            path: '/note-form-page',
-            args: NoteFormRouteArgs(key: key, editedNote: editedNote));
+  NoteFormRoute({
+    Key? key,
+    required dynamic editedNote,
+  }) : super(
+          NoteFormRoute.name,
+          path: '/note-form-page',
+          args: NoteFormRouteArgs(
+            key: key,
+            editedNote: editedNote,
+          ),
+        );
 
   static const String name = 'NoteFormRoute';
 }
 
 class NoteFormRouteArgs {
-  const NoteFormRouteArgs({this.key, required this.editedNote});
+  const NoteFormRouteArgs({
+    this.key,
+    required this.editedNote,
+  });
 
   final Key? key;
 
@@ -91,7 +130,11 @@ class NoteFormRouteArgs {
 /// generated route for
 /// [SplashPage]
 class SplashRoute extends PageRouteInfo<void> {
-  const SplashRoute() : super(SplashRoute.name, path: '/');
+  const SplashRoute()
+      : super(
+          SplashRoute.name,
+          path: '/',
+        );
 
   static const String name = 'SplashRoute';
 }

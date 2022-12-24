@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'note_form_bloc.dart';
 
@@ -11,43 +12,7 @@ part of 'note_form_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$NoteFormEventTearOff {
-  const _$NoteFormEventTearOff();
-
-  _Initialized initialized(Option<Note> body) {
-    return _Initialized(
-      body,
-    );
-  }
-
-  _BodyChanged bodyChanged(String body) {
-    return _BodyChanged(
-      body,
-    );
-  }
-
-  _ColorChanged colorChanged(Color color) {
-    return _ColorChanged(
-      color,
-    );
-  }
-
-  _TodoChanged todoChanged(KtList<TodoItemPrimitive> todo) {
-    return _TodoChanged(
-      todo,
-    );
-  }
-
-  _Saved saved() {
-    return const _Saved();
-  }
-}
-
-/// @nodoc
-const $NoteFormEvent = _$NoteFormEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$NoteFormEvent {
@@ -62,11 +27,11 @@ mixin _$NoteFormEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(Option<Note> body)? initialized,
-    TResult Function(String body)? bodyChanged,
-    TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
-    TResult Function()? saved,
+    TResult? Function(Option<Note> body)? initialized,
+    TResult? Function(String body)? bodyChanged,
+    TResult? Function(Color color)? colorChanged,
+    TResult? Function(KtList<TodoItemPrimitive> todo)? todoChanged,
+    TResult? Function()? saved,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -90,11 +55,11 @@ mixin _$NoteFormEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initialized value)? initialized,
-    TResult Function(_BodyChanged value)? bodyChanged,
-    TResult Function(_ColorChanged value)? colorChanged,
-    TResult Function(_TodoChanged value)? todoChanged,
-    TResult Function(_Saved value)? saved,
+    TResult? Function(_Initialized value)? initialized,
+    TResult? Function(_BodyChanged value)? bodyChanged,
+    TResult? Function(_ColorChanged value)? colorChanged,
+    TResult? Function(_TodoChanged value)? todoChanged,
+    TResult? Function(_Saved value)? saved,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -113,43 +78,44 @@ mixin _$NoteFormEvent {
 abstract class $NoteFormEventCopyWith<$Res> {
   factory $NoteFormEventCopyWith(
           NoteFormEvent value, $Res Function(NoteFormEvent) then) =
-      _$NoteFormEventCopyWithImpl<$Res>;
+      _$NoteFormEventCopyWithImpl<$Res, NoteFormEvent>;
 }
 
 /// @nodoc
-class _$NoteFormEventCopyWithImpl<$Res>
+class _$NoteFormEventCopyWithImpl<$Res, $Val extends NoteFormEvent>
     implements $NoteFormEventCopyWith<$Res> {
   _$NoteFormEventCopyWithImpl(this._value, this._then);
 
-  final NoteFormEvent _value;
   // ignore: unused_field
-  final $Res Function(NoteFormEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$InitializedCopyWith<$Res> {
-  factory _$InitializedCopyWith(
-          _Initialized value, $Res Function(_Initialized) then) =
-      __$InitializedCopyWithImpl<$Res>;
+abstract class _$$_InitializedCopyWith<$Res> {
+  factory _$$_InitializedCopyWith(
+          _$_Initialized value, $Res Function(_$_Initialized) then) =
+      __$$_InitializedCopyWithImpl<$Res>;
+  @useResult
   $Res call({Option<Note> body});
 }
 
 /// @nodoc
-class __$InitializedCopyWithImpl<$Res> extends _$NoteFormEventCopyWithImpl<$Res>
-    implements _$InitializedCopyWith<$Res> {
-  __$InitializedCopyWithImpl(
-      _Initialized _value, $Res Function(_Initialized) _then)
-      : super(_value, (v) => _then(v as _Initialized));
+class __$$_InitializedCopyWithImpl<$Res>
+    extends _$NoteFormEventCopyWithImpl<$Res, _$_Initialized>
+    implements _$$_InitializedCopyWith<$Res> {
+  __$$_InitializedCopyWithImpl(
+      _$_Initialized _value, $Res Function(_$_Initialized) _then)
+      : super(_value, _then);
 
-  @override
-  _Initialized get _value => super._value as _Initialized;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? body = freezed,
+    Object? body = null,
   }) {
-    return _then(_Initialized(
-      body == freezed
+    return _then(_$_Initialized(
+      null == body
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as Option<Note>,
@@ -174,18 +140,18 @@ class _$_Initialized implements _Initialized {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Initialized &&
-            const DeepCollectionEquality().equals(other.body, body));
+            other is _$_Initialized &&
+            (identical(other.body, body) || other.body == body));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(body));
+  int get hashCode => Object.hash(runtimeType, body);
 
   @JsonKey(ignore: true)
   @override
-  _$InitializedCopyWith<_Initialized> get copyWith =>
-      __$InitializedCopyWithImpl<_Initialized>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_InitializedCopyWith<_$_Initialized> get copyWith =>
+      __$$_InitializedCopyWithImpl<_$_Initialized>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -202,11 +168,11 @@ class _$_Initialized implements _Initialized {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(Option<Note> body)? initialized,
-    TResult Function(String body)? bodyChanged,
-    TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
-    TResult Function()? saved,
+    TResult? Function(Option<Note> body)? initialized,
+    TResult? Function(String body)? bodyChanged,
+    TResult? Function(Color color)? colorChanged,
+    TResult? Function(KtList<TodoItemPrimitive> todo)? todoChanged,
+    TResult? Function()? saved,
   }) {
     return initialized?.call(body);
   }
@@ -242,11 +208,11 @@ class _$_Initialized implements _Initialized {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initialized value)? initialized,
-    TResult Function(_BodyChanged value)? bodyChanged,
-    TResult Function(_ColorChanged value)? colorChanged,
-    TResult Function(_TodoChanged value)? todoChanged,
-    TResult Function(_Saved value)? saved,
+    TResult? Function(_Initialized value)? initialized,
+    TResult? Function(_BodyChanged value)? bodyChanged,
+    TResult? Function(_ColorChanged value)? colorChanged,
+    TResult? Function(_TodoChanged value)? todoChanged,
+    TResult? Function(_Saved value)? saved,
   }) {
     return initialized?.call(this);
   }
@@ -269,38 +235,38 @@ class _$_Initialized implements _Initialized {
 }
 
 abstract class _Initialized implements NoteFormEvent {
-  const factory _Initialized(Option<Note> body) = _$_Initialized;
+  const factory _Initialized(final Option<Note> body) = _$_Initialized;
 
   Option<Note> get body;
   @JsonKey(ignore: true)
-  _$InitializedCopyWith<_Initialized> get copyWith =>
+  _$$_InitializedCopyWith<_$_Initialized> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$BodyChangedCopyWith<$Res> {
-  factory _$BodyChangedCopyWith(
-          _BodyChanged value, $Res Function(_BodyChanged) then) =
-      __$BodyChangedCopyWithImpl<$Res>;
+abstract class _$$_BodyChangedCopyWith<$Res> {
+  factory _$$_BodyChangedCopyWith(
+          _$_BodyChanged value, $Res Function(_$_BodyChanged) then) =
+      __$$_BodyChangedCopyWithImpl<$Res>;
+  @useResult
   $Res call({String body});
 }
 
 /// @nodoc
-class __$BodyChangedCopyWithImpl<$Res> extends _$NoteFormEventCopyWithImpl<$Res>
-    implements _$BodyChangedCopyWith<$Res> {
-  __$BodyChangedCopyWithImpl(
-      _BodyChanged _value, $Res Function(_BodyChanged) _then)
-      : super(_value, (v) => _then(v as _BodyChanged));
+class __$$_BodyChangedCopyWithImpl<$Res>
+    extends _$NoteFormEventCopyWithImpl<$Res, _$_BodyChanged>
+    implements _$$_BodyChangedCopyWith<$Res> {
+  __$$_BodyChangedCopyWithImpl(
+      _$_BodyChanged _value, $Res Function(_$_BodyChanged) _then)
+      : super(_value, _then);
 
-  @override
-  _BodyChanged get _value => super._value as _BodyChanged;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? body = freezed,
+    Object? body = null,
   }) {
-    return _then(_BodyChanged(
-      body == freezed
+    return _then(_$_BodyChanged(
+      null == body
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String,
@@ -325,18 +291,18 @@ class _$_BodyChanged implements _BodyChanged {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _BodyChanged &&
-            const DeepCollectionEquality().equals(other.body, body));
+            other is _$_BodyChanged &&
+            (identical(other.body, body) || other.body == body));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(body));
+  int get hashCode => Object.hash(runtimeType, body);
 
   @JsonKey(ignore: true)
   @override
-  _$BodyChangedCopyWith<_BodyChanged> get copyWith =>
-      __$BodyChangedCopyWithImpl<_BodyChanged>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_BodyChangedCopyWith<_$_BodyChanged> get copyWith =>
+      __$$_BodyChangedCopyWithImpl<_$_BodyChanged>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -353,11 +319,11 @@ class _$_BodyChanged implements _BodyChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(Option<Note> body)? initialized,
-    TResult Function(String body)? bodyChanged,
-    TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
-    TResult Function()? saved,
+    TResult? Function(Option<Note> body)? initialized,
+    TResult? Function(String body)? bodyChanged,
+    TResult? Function(Color color)? colorChanged,
+    TResult? Function(KtList<TodoItemPrimitive> todo)? todoChanged,
+    TResult? Function()? saved,
   }) {
     return bodyChanged?.call(body);
   }
@@ -393,11 +359,11 @@ class _$_BodyChanged implements _BodyChanged {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initialized value)? initialized,
-    TResult Function(_BodyChanged value)? bodyChanged,
-    TResult Function(_ColorChanged value)? colorChanged,
-    TResult Function(_TodoChanged value)? todoChanged,
-    TResult Function(_Saved value)? saved,
+    TResult? Function(_Initialized value)? initialized,
+    TResult? Function(_BodyChanged value)? bodyChanged,
+    TResult? Function(_ColorChanged value)? colorChanged,
+    TResult? Function(_TodoChanged value)? todoChanged,
+    TResult? Function(_Saved value)? saved,
   }) {
     return bodyChanged?.call(this);
   }
@@ -420,39 +386,38 @@ class _$_BodyChanged implements _BodyChanged {
 }
 
 abstract class _BodyChanged implements NoteFormEvent {
-  const factory _BodyChanged(String body) = _$_BodyChanged;
+  const factory _BodyChanged(final String body) = _$_BodyChanged;
 
   String get body;
   @JsonKey(ignore: true)
-  _$BodyChangedCopyWith<_BodyChanged> get copyWith =>
+  _$$_BodyChangedCopyWith<_$_BodyChanged> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ColorChangedCopyWith<$Res> {
-  factory _$ColorChangedCopyWith(
-          _ColorChanged value, $Res Function(_ColorChanged) then) =
-      __$ColorChangedCopyWithImpl<$Res>;
+abstract class _$$_ColorChangedCopyWith<$Res> {
+  factory _$$_ColorChangedCopyWith(
+          _$_ColorChanged value, $Res Function(_$_ColorChanged) then) =
+      __$$_ColorChangedCopyWithImpl<$Res>;
+  @useResult
   $Res call({Color color});
 }
 
 /// @nodoc
-class __$ColorChangedCopyWithImpl<$Res>
-    extends _$NoteFormEventCopyWithImpl<$Res>
-    implements _$ColorChangedCopyWith<$Res> {
-  __$ColorChangedCopyWithImpl(
-      _ColorChanged _value, $Res Function(_ColorChanged) _then)
-      : super(_value, (v) => _then(v as _ColorChanged));
+class __$$_ColorChangedCopyWithImpl<$Res>
+    extends _$NoteFormEventCopyWithImpl<$Res, _$_ColorChanged>
+    implements _$$_ColorChangedCopyWith<$Res> {
+  __$$_ColorChangedCopyWithImpl(
+      _$_ColorChanged _value, $Res Function(_$_ColorChanged) _then)
+      : super(_value, _then);
 
-  @override
-  _ColorChanged get _value => super._value as _ColorChanged;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? color = freezed,
+    Object? color = null,
   }) {
-    return _then(_ColorChanged(
-      color == freezed
+    return _then(_$_ColorChanged(
+      null == color
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
               as Color,
@@ -477,18 +442,18 @@ class _$_ColorChanged implements _ColorChanged {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ColorChanged &&
-            const DeepCollectionEquality().equals(other.color, color));
+            other is _$_ColorChanged &&
+            (identical(other.color, color) || other.color == color));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(color));
+  int get hashCode => Object.hash(runtimeType, color);
 
   @JsonKey(ignore: true)
   @override
-  _$ColorChangedCopyWith<_ColorChanged> get copyWith =>
-      __$ColorChangedCopyWithImpl<_ColorChanged>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_ColorChangedCopyWith<_$_ColorChanged> get copyWith =>
+      __$$_ColorChangedCopyWithImpl<_$_ColorChanged>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -505,11 +470,11 @@ class _$_ColorChanged implements _ColorChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(Option<Note> body)? initialized,
-    TResult Function(String body)? bodyChanged,
-    TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
-    TResult Function()? saved,
+    TResult? Function(Option<Note> body)? initialized,
+    TResult? Function(String body)? bodyChanged,
+    TResult? Function(Color color)? colorChanged,
+    TResult? Function(KtList<TodoItemPrimitive> todo)? todoChanged,
+    TResult? Function()? saved,
   }) {
     return colorChanged?.call(color);
   }
@@ -545,11 +510,11 @@ class _$_ColorChanged implements _ColorChanged {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initialized value)? initialized,
-    TResult Function(_BodyChanged value)? bodyChanged,
-    TResult Function(_ColorChanged value)? colorChanged,
-    TResult Function(_TodoChanged value)? todoChanged,
-    TResult Function(_Saved value)? saved,
+    TResult? Function(_Initialized value)? initialized,
+    TResult? Function(_BodyChanged value)? bodyChanged,
+    TResult? Function(_ColorChanged value)? colorChanged,
+    TResult? Function(_TodoChanged value)? todoChanged,
+    TResult? Function(_Saved value)? saved,
   }) {
     return colorChanged?.call(this);
   }
@@ -572,38 +537,38 @@ class _$_ColorChanged implements _ColorChanged {
 }
 
 abstract class _ColorChanged implements NoteFormEvent {
-  const factory _ColorChanged(Color color) = _$_ColorChanged;
+  const factory _ColorChanged(final Color color) = _$_ColorChanged;
 
   Color get color;
   @JsonKey(ignore: true)
-  _$ColorChangedCopyWith<_ColorChanged> get copyWith =>
+  _$$_ColorChangedCopyWith<_$_ColorChanged> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$TodoChangedCopyWith<$Res> {
-  factory _$TodoChangedCopyWith(
-          _TodoChanged value, $Res Function(_TodoChanged) then) =
-      __$TodoChangedCopyWithImpl<$Res>;
+abstract class _$$_TodoChangedCopyWith<$Res> {
+  factory _$$_TodoChangedCopyWith(
+          _$_TodoChanged value, $Res Function(_$_TodoChanged) then) =
+      __$$_TodoChangedCopyWithImpl<$Res>;
+  @useResult
   $Res call({KtList<TodoItemPrimitive> todo});
 }
 
 /// @nodoc
-class __$TodoChangedCopyWithImpl<$Res> extends _$NoteFormEventCopyWithImpl<$Res>
-    implements _$TodoChangedCopyWith<$Res> {
-  __$TodoChangedCopyWithImpl(
-      _TodoChanged _value, $Res Function(_TodoChanged) _then)
-      : super(_value, (v) => _then(v as _TodoChanged));
+class __$$_TodoChangedCopyWithImpl<$Res>
+    extends _$NoteFormEventCopyWithImpl<$Res, _$_TodoChanged>
+    implements _$$_TodoChangedCopyWith<$Res> {
+  __$$_TodoChangedCopyWithImpl(
+      _$_TodoChanged _value, $Res Function(_$_TodoChanged) _then)
+      : super(_value, _then);
 
-  @override
-  _TodoChanged get _value => super._value as _TodoChanged;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? todo = freezed,
+    Object? todo = null,
   }) {
-    return _then(_TodoChanged(
-      todo == freezed
+    return _then(_$_TodoChanged(
+      null == todo
           ? _value.todo
           : todo // ignore: cast_nullable_to_non_nullable
               as KtList<TodoItemPrimitive>,
@@ -628,18 +593,18 @@ class _$_TodoChanged implements _TodoChanged {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TodoChanged &&
-            const DeepCollectionEquality().equals(other.todo, todo));
+            other is _$_TodoChanged &&
+            (identical(other.todo, todo) || other.todo == todo));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(todo));
+  int get hashCode => Object.hash(runtimeType, todo);
 
   @JsonKey(ignore: true)
   @override
-  _$TodoChangedCopyWith<_TodoChanged> get copyWith =>
-      __$TodoChangedCopyWithImpl<_TodoChanged>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_TodoChangedCopyWith<_$_TodoChanged> get copyWith =>
+      __$$_TodoChangedCopyWithImpl<_$_TodoChanged>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -656,11 +621,11 @@ class _$_TodoChanged implements _TodoChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(Option<Note> body)? initialized,
-    TResult Function(String body)? bodyChanged,
-    TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
-    TResult Function()? saved,
+    TResult? Function(Option<Note> body)? initialized,
+    TResult? Function(String body)? bodyChanged,
+    TResult? Function(Color color)? colorChanged,
+    TResult? Function(KtList<TodoItemPrimitive> todo)? todoChanged,
+    TResult? Function()? saved,
   }) {
     return todoChanged?.call(todo);
   }
@@ -696,11 +661,11 @@ class _$_TodoChanged implements _TodoChanged {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initialized value)? initialized,
-    TResult Function(_BodyChanged value)? bodyChanged,
-    TResult Function(_ColorChanged value)? colorChanged,
-    TResult Function(_TodoChanged value)? todoChanged,
-    TResult Function(_Saved value)? saved,
+    TResult? Function(_Initialized value)? initialized,
+    TResult? Function(_BodyChanged value)? bodyChanged,
+    TResult? Function(_ColorChanged value)? colorChanged,
+    TResult? Function(_TodoChanged value)? todoChanged,
+    TResult? Function(_Saved value)? saved,
   }) {
     return todoChanged?.call(this);
   }
@@ -723,28 +688,27 @@ class _$_TodoChanged implements _TodoChanged {
 }
 
 abstract class _TodoChanged implements NoteFormEvent {
-  const factory _TodoChanged(KtList<TodoItemPrimitive> todo) = _$_TodoChanged;
+  const factory _TodoChanged(final KtList<TodoItemPrimitive> todo) =
+      _$_TodoChanged;
 
   KtList<TodoItemPrimitive> get todo;
   @JsonKey(ignore: true)
-  _$TodoChangedCopyWith<_TodoChanged> get copyWith =>
+  _$$_TodoChangedCopyWith<_$_TodoChanged> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$SavedCopyWith<$Res> {
-  factory _$SavedCopyWith(_Saved value, $Res Function(_Saved) then) =
-      __$SavedCopyWithImpl<$Res>;
+abstract class _$$_SavedCopyWith<$Res> {
+  factory _$$_SavedCopyWith(_$_Saved value, $Res Function(_$_Saved) then) =
+      __$$_SavedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$SavedCopyWithImpl<$Res> extends _$NoteFormEventCopyWithImpl<$Res>
-    implements _$SavedCopyWith<$Res> {
-  __$SavedCopyWithImpl(_Saved _value, $Res Function(_Saved) _then)
-      : super(_value, (v) => _then(v as _Saved));
-
-  @override
-  _Saved get _value => super._value as _Saved;
+class __$$_SavedCopyWithImpl<$Res>
+    extends _$NoteFormEventCopyWithImpl<$Res, _$_Saved>
+    implements _$$_SavedCopyWith<$Res> {
+  __$$_SavedCopyWithImpl(_$_Saved _value, $Res Function(_$_Saved) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -760,7 +724,7 @@ class _$_Saved implements _Saved {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _Saved);
+        (other.runtimeType == runtimeType && other is _$_Saved);
   }
 
   @override
@@ -781,11 +745,11 @@ class _$_Saved implements _Saved {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(Option<Note> body)? initialized,
-    TResult Function(String body)? bodyChanged,
-    TResult Function(Color color)? colorChanged,
-    TResult Function(KtList<TodoItemPrimitive> todo)? todoChanged,
-    TResult Function()? saved,
+    TResult? Function(Option<Note> body)? initialized,
+    TResult? Function(String body)? bodyChanged,
+    TResult? Function(Color color)? colorChanged,
+    TResult? Function(KtList<TodoItemPrimitive> todo)? todoChanged,
+    TResult? Function()? saved,
   }) {
     return saved?.call();
   }
@@ -821,11 +785,11 @@ class _$_Saved implements _Saved {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initialized value)? initialized,
-    TResult Function(_BodyChanged value)? bodyChanged,
-    TResult Function(_ColorChanged value)? colorChanged,
-    TResult Function(_TodoChanged value)? todoChanged,
-    TResult Function(_Saved value)? saved,
+    TResult? Function(_Initialized value)? initialized,
+    TResult? Function(_BodyChanged value)? bodyChanged,
+    TResult? Function(_ColorChanged value)? colorChanged,
+    TResult? Function(_TodoChanged value)? todoChanged,
+    TResult? Function(_Saved value)? saved,
   }) {
     return saved?.call(this);
   }
@@ -852,29 +816,6 @@ abstract class _Saved implements NoteFormEvent {
 }
 
 /// @nodoc
-class _$NoteFormStateTearOff {
-  const _$NoteFormStateTearOff();
-
-  _NoteFormState call(
-      {required Note note,
-      required AutovalidateMode showErrorMessages,
-      required bool isSaving,
-      required bool isEditing,
-      required Option<Either<NoteFailure, Unit>> saveFailureOrSuccess}) {
-    return _NoteFormState(
-      note: note,
-      showErrorMessages: showErrorMessages,
-      isSaving: isSaving,
-      isEditing: isEditing,
-      saveFailureOrSuccess: saveFailureOrSuccess,
-    );
-  }
-}
-
-/// @nodoc
-const $NoteFormState = _$NoteFormStateTearOff();
-
-/// @nodoc
 mixin _$NoteFormState {
   Note get note => throw _privateConstructorUsedError;
   AutovalidateMode get showErrorMessages => throw _privateConstructorUsedError;
@@ -892,7 +833,8 @@ mixin _$NoteFormState {
 abstract class $NoteFormStateCopyWith<$Res> {
   factory $NoteFormStateCopyWith(
           NoteFormState value, $Res Function(NoteFormState) then) =
-      _$NoteFormStateCopyWithImpl<$Res>;
+      _$NoteFormStateCopyWithImpl<$Res, NoteFormState>;
+  @useResult
   $Res call(
       {Note note,
       AutovalidateMode showErrorMessages,
@@ -904,61 +846,65 @@ abstract class $NoteFormStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$NoteFormStateCopyWithImpl<$Res>
+class _$NoteFormStateCopyWithImpl<$Res, $Val extends NoteFormState>
     implements $NoteFormStateCopyWith<$Res> {
   _$NoteFormStateCopyWithImpl(this._value, this._then);
 
-  final NoteFormState _value;
   // ignore: unused_field
-  final $Res Function(NoteFormState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? note = freezed,
-    Object? showErrorMessages = freezed,
-    Object? isSaving = freezed,
-    Object? isEditing = freezed,
-    Object? saveFailureOrSuccess = freezed,
+    Object? note = null,
+    Object? showErrorMessages = null,
+    Object? isSaving = null,
+    Object? isEditing = null,
+    Object? saveFailureOrSuccess = null,
   }) {
     return _then(_value.copyWith(
-      note: note == freezed
+      note: null == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as Note,
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as AutovalidateMode,
-      isSaving: isSaving == freezed
+      isSaving: null == isSaving
           ? _value.isSaving
           : isSaving // ignore: cast_nullable_to_non_nullable
               as bool,
-      isEditing: isEditing == freezed
+      isEditing: null == isEditing
           ? _value.isEditing
           : isEditing // ignore: cast_nullable_to_non_nullable
               as bool,
-      saveFailureOrSuccess: saveFailureOrSuccess == freezed
+      saveFailureOrSuccess: null == saveFailureOrSuccess
           ? _value.saveFailureOrSuccess
           : saveFailureOrSuccess // ignore: cast_nullable_to_non_nullable
               as Option<Either<NoteFailure, Unit>>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NoteCopyWith<$Res> get note {
     return $NoteCopyWith<$Res>(_value.note, (value) {
-      return _then(_value.copyWith(note: value));
+      return _then(_value.copyWith(note: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$NoteFormStateCopyWith<$Res>
+abstract class _$$_NoteFormStateCopyWith<$Res>
     implements $NoteFormStateCopyWith<$Res> {
-  factory _$NoteFormStateCopyWith(
-          _NoteFormState value, $Res Function(_NoteFormState) then) =
-      __$NoteFormStateCopyWithImpl<$Res>;
+  factory _$$_NoteFormStateCopyWith(
+          _$_NoteFormState value, $Res Function(_$_NoteFormState) then) =
+      __$$_NoteFormStateCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {Note note,
       AutovalidateMode showErrorMessages,
@@ -971,42 +917,40 @@ abstract class _$NoteFormStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$NoteFormStateCopyWithImpl<$Res>
-    extends _$NoteFormStateCopyWithImpl<$Res>
-    implements _$NoteFormStateCopyWith<$Res> {
-  __$NoteFormStateCopyWithImpl(
-      _NoteFormState _value, $Res Function(_NoteFormState) _then)
-      : super(_value, (v) => _then(v as _NoteFormState));
+class __$$_NoteFormStateCopyWithImpl<$Res>
+    extends _$NoteFormStateCopyWithImpl<$Res, _$_NoteFormState>
+    implements _$$_NoteFormStateCopyWith<$Res> {
+  __$$_NoteFormStateCopyWithImpl(
+      _$_NoteFormState _value, $Res Function(_$_NoteFormState) _then)
+      : super(_value, _then);
 
-  @override
-  _NoteFormState get _value => super._value as _NoteFormState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? note = freezed,
-    Object? showErrorMessages = freezed,
-    Object? isSaving = freezed,
-    Object? isEditing = freezed,
-    Object? saveFailureOrSuccess = freezed,
+    Object? note = null,
+    Object? showErrorMessages = null,
+    Object? isSaving = null,
+    Object? isEditing = null,
+    Object? saveFailureOrSuccess = null,
   }) {
-    return _then(_NoteFormState(
-      note: note == freezed
+    return _then(_$_NoteFormState(
+      note: null == note
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as Note,
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as AutovalidateMode,
-      isSaving: isSaving == freezed
+      isSaving: null == isSaving
           ? _value.isSaving
           : isSaving // ignore: cast_nullable_to_non_nullable
               as bool,
-      isEditing: isEditing == freezed
+      isEditing: null == isEditing
           ? _value.isEditing
           : isEditing // ignore: cast_nullable_to_non_nullable
               as bool,
-      saveFailureOrSuccess: saveFailureOrSuccess == freezed
+      saveFailureOrSuccess: null == saveFailureOrSuccess
           ? _value.saveFailureOrSuccess
           : saveFailureOrSuccess // ignore: cast_nullable_to_non_nullable
               as Option<Either<NoteFailure, Unit>>,
@@ -1044,39 +988,37 @@ class _$_NoteFormState implements _NoteFormState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NoteFormState &&
-            const DeepCollectionEquality().equals(other.note, note) &&
-            const DeepCollectionEquality()
-                .equals(other.showErrorMessages, showErrorMessages) &&
-            const DeepCollectionEquality().equals(other.isSaving, isSaving) &&
-            const DeepCollectionEquality().equals(other.isEditing, isEditing) &&
-            const DeepCollectionEquality()
-                .equals(other.saveFailureOrSuccess, saveFailureOrSuccess));
+            other is _$_NoteFormState &&
+            (identical(other.note, note) || other.note == note) &&
+            (identical(other.showErrorMessages, showErrorMessages) ||
+                other.showErrorMessages == showErrorMessages) &&
+            (identical(other.isSaving, isSaving) ||
+                other.isSaving == isSaving) &&
+            (identical(other.isEditing, isEditing) ||
+                other.isEditing == isEditing) &&
+            (identical(other.saveFailureOrSuccess, saveFailureOrSuccess) ||
+                other.saveFailureOrSuccess == saveFailureOrSuccess));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(note),
-      const DeepCollectionEquality().hash(showErrorMessages),
-      const DeepCollectionEquality().hash(isSaving),
-      const DeepCollectionEquality().hash(isEditing),
-      const DeepCollectionEquality().hash(saveFailureOrSuccess));
+  int get hashCode => Object.hash(runtimeType, note, showErrorMessages,
+      isSaving, isEditing, saveFailureOrSuccess);
 
   @JsonKey(ignore: true)
   @override
-  _$NoteFormStateCopyWith<_NoteFormState> get copyWith =>
-      __$NoteFormStateCopyWithImpl<_NoteFormState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_NoteFormStateCopyWith<_$_NoteFormState> get copyWith =>
+      __$$_NoteFormStateCopyWithImpl<_$_NoteFormState>(this, _$identity);
 }
 
 abstract class _NoteFormState implements NoteFormState {
   const factory _NoteFormState(
-          {required Note note,
-          required AutovalidateMode showErrorMessages,
-          required bool isSaving,
-          required bool isEditing,
-          required Option<Either<NoteFailure, Unit>> saveFailureOrSuccess}) =
-      _$_NoteFormState;
+      {required final Note note,
+      required final AutovalidateMode showErrorMessages,
+      required final bool isSaving,
+      required final bool isEditing,
+      required final Option<Either<NoteFailure, Unit>>
+          saveFailureOrSuccess}) = _$_NoteFormState;
 
   @override
   Note get note;
@@ -1090,6 +1032,6 @@ abstract class _NoteFormState implements NoteFormState {
   Option<Either<NoteFailure, Unit>> get saveFailureOrSuccess;
   @override
   @JsonKey(ignore: true)
-  _$NoteFormStateCopyWith<_NoteFormState> get copyWith =>
+  _$$_NoteFormStateCopyWith<_$_NoteFormState> get copyWith =>
       throw _privateConstructorUsedError;
 }

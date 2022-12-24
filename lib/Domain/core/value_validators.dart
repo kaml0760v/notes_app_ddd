@@ -47,13 +47,13 @@ Either<ValueFailure<String>, String> validateSingleLine(String input) {
 }
 
 Either<ValueFailure<KtList<T>>, KtList<T>> validateMaxListLength<T>(
-    KtList<T> input, int MaxLength) {
-  if (input.size <= MaxLength) {
+    KtList<T> input, int maxLength) {
+  if (input.size <= maxLength) {
     return right(input);
   } else {
     return left(ValueFailure.listTooLong(
       failedValue: input,
-      max: MaxLength,
+      max: maxLength,
     ));
   }
 }

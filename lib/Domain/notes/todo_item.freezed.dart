@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'todo_item.dart';
 
@@ -11,24 +12,7 @@ part of 'todo_item.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$TodoItemTearOff {
-  const _$TodoItemTearOff();
-
-  _TodoItem call(
-      {required TodoName name, required UniqueId id, required bool done}) {
-    return _TodoItem(
-      name: name,
-      id: id,
-      done: done,
-    );
-  }
-}
-
-/// @nodoc
-const $TodoItem = _$TodoItemTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$TodoItem {
@@ -44,74 +28,80 @@ mixin _$TodoItem {
 /// @nodoc
 abstract class $TodoItemCopyWith<$Res> {
   factory $TodoItemCopyWith(TodoItem value, $Res Function(TodoItem) then) =
-      _$TodoItemCopyWithImpl<$Res>;
+      _$TodoItemCopyWithImpl<$Res, TodoItem>;
+  @useResult
   $Res call({TodoName name, UniqueId id, bool done});
 }
 
 /// @nodoc
-class _$TodoItemCopyWithImpl<$Res> implements $TodoItemCopyWith<$Res> {
+class _$TodoItemCopyWithImpl<$Res, $Val extends TodoItem>
+    implements $TodoItemCopyWith<$Res> {
   _$TodoItemCopyWithImpl(this._value, this._then);
 
-  final TodoItem _value;
   // ignore: unused_field
-  final $Res Function(TodoItem) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? id = freezed,
-    Object? done = freezed,
+    Object? name = null,
+    Object? id = null,
+    Object? done = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as TodoName,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as UniqueId,
-      done: done == freezed
+      done: null == done
           ? _value.done
           : done // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$TodoItemCopyWith<$Res> implements $TodoItemCopyWith<$Res> {
-  factory _$TodoItemCopyWith(_TodoItem value, $Res Function(_TodoItem) then) =
-      __$TodoItemCopyWithImpl<$Res>;
+abstract class _$$_TodoItemCopyWith<$Res> implements $TodoItemCopyWith<$Res> {
+  factory _$$_TodoItemCopyWith(
+          _$_TodoItem value, $Res Function(_$_TodoItem) then) =
+      __$$_TodoItemCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({TodoName name, UniqueId id, bool done});
 }
 
 /// @nodoc
-class __$TodoItemCopyWithImpl<$Res> extends _$TodoItemCopyWithImpl<$Res>
-    implements _$TodoItemCopyWith<$Res> {
-  __$TodoItemCopyWithImpl(_TodoItem _value, $Res Function(_TodoItem) _then)
-      : super(_value, (v) => _then(v as _TodoItem));
+class __$$_TodoItemCopyWithImpl<$Res>
+    extends _$TodoItemCopyWithImpl<$Res, _$_TodoItem>
+    implements _$$_TodoItemCopyWith<$Res> {
+  __$$_TodoItemCopyWithImpl(
+      _$_TodoItem _value, $Res Function(_$_TodoItem) _then)
+      : super(_value, _then);
 
-  @override
-  _TodoItem get _value => super._value as _TodoItem;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? id = freezed,
-    Object? done = freezed,
+    Object? name = null,
+    Object? id = null,
+    Object? done = null,
   }) {
-    return _then(_TodoItem(
-      name: name == freezed
+    return _then(_$_TodoItem(
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as TodoName,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as UniqueId,
-      done: done == freezed
+      done: null == done
           ? _value.done
           : done // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -141,30 +131,27 @@ class _$_TodoItem extends _TodoItem {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TodoItem &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.done, done));
+            other is _$_TodoItem &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.done, done) || other.done == done));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(done));
+  int get hashCode => Object.hash(runtimeType, name, id, done);
 
   @JsonKey(ignore: true)
   @override
-  _$TodoItemCopyWith<_TodoItem> get copyWith =>
-      __$TodoItemCopyWithImpl<_TodoItem>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_TodoItemCopyWith<_$_TodoItem> get copyWith =>
+      __$$_TodoItemCopyWithImpl<_$_TodoItem>(this, _$identity);
 }
 
 abstract class _TodoItem extends TodoItem {
   const factory _TodoItem(
-      {required TodoName name,
-      required UniqueId id,
-      required bool done}) = _$_TodoItem;
+      {required final TodoName name,
+      required final UniqueId id,
+      required final bool done}) = _$_TodoItem;
   const _TodoItem._() : super._();
 
   @override
@@ -175,6 +162,6 @@ abstract class _TodoItem extends TodoItem {
   bool get done;
   @override
   @JsonKey(ignore: true)
-  _$TodoItemCopyWith<_TodoItem> get copyWith =>
+  _$$_TodoItemCopyWith<_$_TodoItem> get copyWith =>
       throw _privateConstructorUsedError;
 }

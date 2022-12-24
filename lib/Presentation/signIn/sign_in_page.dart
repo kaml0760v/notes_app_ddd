@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignInPage extends StatelessWidget {
+   static const String routes = '/sign-in';
   const SignInPage({Key? key}) : super(key: key);
 
   @override

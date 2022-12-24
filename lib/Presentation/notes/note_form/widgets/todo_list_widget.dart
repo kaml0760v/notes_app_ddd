@@ -1,14 +1,11 @@
 import 'package:ddd_training/Application/notes/note_form/note_form_bloc.dart';
 import 'package:ddd_training/Presentation/notes/note_form/misc/todo_item_presentation_classes.dart';
-import 'package:ddd_training/Presentation/routes/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:implicitly_animated_reorderable_list/implicitly_animated_reorderable_list.dart';
-import 'package:kt_dart/src/collection/interop.dart';
-import 'package:kt_dart/src/collection/kt_iterable.dart';
-import 'package:kt_dart/src/collection/kt_list.dart';
+import 'package:kt_dart/collection.dart';
 import 'package:provider/provider.dart';
 import 'package:ddd_training/Presentation/notes/note_form/misc/build_context_x.dart';
 
@@ -81,7 +78,7 @@ class TodoTile extends HookWidget {
         context.formTodos.getOrElse(index, (_) => TodoItemPrimitive.empty());
     final textEditingController = useTextEditingController(text: todo.name);
     return Slidable(
-      endActionPane: ActionPane(motion: ScrollMotion(), children: [
+      endActionPane: ActionPane(motion: const ScrollMotion(), children: [
         SlidableAction(
           onPressed: (context) {
             context.formTodos = context.formTodos.minusElement(todo);

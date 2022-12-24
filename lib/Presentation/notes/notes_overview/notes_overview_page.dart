@@ -2,15 +2,17 @@ import 'package:auto_route/auto_route.dart';
 import 'package:ddd_training/Application/auth/auth_bloc.dart';
 import 'package:ddd_training/Application/notes/note_actor/note_actor_bloc.dart';
 import 'package:ddd_training/Application/notes/note_watcher/note_watcher_bloc.dart';
-import 'package:ddd_training/Presentation/routes/app_router.dart';
 import 'package:ddd_training/injection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../routes/app_router.dart';
 import 'widgets/notes_overview_body.dart';
 import 'widgets/uncompleted_notes.dart';
 
 class NotesOverviewPage extends StatelessWidget {
+  static const String routes = '/note-overview';
+
   const NotesOverviewPage({Key? key}) : super(key: key);
 
   @override
@@ -32,6 +34,7 @@ class NotesOverviewPage extends StatelessWidget {
               state.maybeMap(
                   orElse: () {},
                   unauthenticated: (_) {
+                    // Navigator.pushReplacementNamed(context, SignInPage.routes);
                     AutoRouter.of(context).replaceNamed('/sign-in-page');
                   });
             },
@@ -70,6 +73,7 @@ class NotesOverviewPage extends StatelessWidget {
           floatingActionButton: FloatingActionButton(
             onPressed: () {
               AutoRouter.of(context).push(NoteFormRoute(editedNote: null));
+              // Navigator.pushNamed(context, NoteFormPage.routes, arguments: {});
             },
             child: const Icon(Icons.add),
           ),

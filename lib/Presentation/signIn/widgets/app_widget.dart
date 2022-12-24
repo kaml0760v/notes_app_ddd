@@ -1,8 +1,9 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ddd_training/Presentation/routes/app_router.dart' as app_router;
 import 'package:ddd_training/Application/auth/auth_bloc.dart';
 import 'package:ddd_training/injection.dart';
+import 'package:ddd_training/Presentation/routes/app_router.dart' as app_router;
 
 
 class AppWidget extends StatelessWidget {
@@ -14,7 +15,8 @@ class AppWidget extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (context) => getIt<AuthBloc>()..add(const AuthEvent.authCheckRequested()),
+          create: (context) =>
+              getIt<AuthBloc>()..add(const AuthEvent.authCheckRequested()),
         )
       ],
       child: MaterialApp.router(
@@ -30,6 +32,28 @@ class AppWidget extends StatelessWidget {
             ),
           ),
         ),
+        // onGenerateRoute: (settings) {
+        //   final arguments = settings.arguments;
+
+        //   switch (settings.name) {
+        //     case SignInPage.routes:
+        //       return MaterialPageRoute(
+        //           builder: (context) => const SignInPage());
+        //     case NotesOverviewPage.routes:
+        //       return MaterialPageRoute(
+        //           builder: (context) => const NotesOverviewPage());
+        //     case NoteFormPage.routes:
+        //       final args = (arguments ?? Map) as Map;
+
+        //       return MaterialPageRoute(
+        //           builder: (context) => NoteFormPage(
+        //                 editedNote: args["editedNote"],
+        //               ));
+        //     default:
+        //       return MaterialPageRoute(
+        //           builder: (context) => const SplashPage());
+        //   }
+        // },
         // home: const SignIn(),
       ),
     );

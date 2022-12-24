@@ -4,8 +4,8 @@ import 'package:ddd_training/Application/notes/note_form/note_form_bloc.dart';
 import 'package:ddd_training/Presentation/notes/note_form/widgets/add_todo_widget.dart';
 import 'package:ddd_training/Presentation/notes/note_form/misc/todo_item_presentation_classes.dart';
 import 'package:ddd_training/Presentation/notes/note_form/widgets/todo_list_widget.dart';
-import 'package:ddd_training/Presentation/routes/app_router.dart';
 import 'package:provider/provider.dart';
+import '../../routes/app_router.dart';
 import 'widgets/color_field_widget.dart';
 import 'widgets/form_body_field_widget.dart';
 import 'package:ddd_training/injection.dart';
@@ -13,6 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class NoteFormPage extends StatelessWidget {
+  static const String routes = '/note-form';
   final dynamic editedNote;
 
   const NoteFormPage({Key? key, required this.editedNote}) : super(key: key);
@@ -40,8 +41,16 @@ class NoteFormPage extends StatelessWidget {
                             unableToUpdate: (_) => "Unabale to update")),
                       ),
                     ),
-                    (r) => AutoRouter.of(context).popUntil((route) =>
-                        route.settings.name == NotesOverviewRoute.name),
+                    (r) =>
+                        //  {
+                        //   Navigator.popUntil(
+                        //       context,
+                        //       (route) =>
+                        //           route.settings.name == NoteFormPage.routes),
+                        // },
+
+                        AutoRouter.of(context).popUntil((route) =>
+                            route.settings.name == NotesOverviewRoute.name),
                   ));
         },
         buildWhen: (previous, current) {
@@ -96,6 +105,7 @@ class SavingInProgressOverlay extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class NoteFormPageScaffold extends StatelessWidget {
   dynamic editedNote;
   NoteFormPageScaffold({

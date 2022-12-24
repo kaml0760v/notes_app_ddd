@@ -15,5 +15,5 @@ class NoteFormState with _$NoteFormState {
       showErrorMessages: AutovalidateMode.disabled,
       isSaving: false,
       isEditing: false,
-      saveFailureOrSuccess: none());
+      saveFailureOrSuccess: none(),);
 }

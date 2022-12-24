@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'sign_in_bloc.dart';
 
@@ -11,39 +12,7 @@ part of 'sign_in_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$SignInEventTearOff {
-  const _$SignInEventTearOff();
-
-  EmailChanged emailChanged(String email) {
-    return EmailChanged(
-      email,
-    );
-  }
-
-  PasswordChanged passwordChanged(String password) {
-    return PasswordChanged(
-      password,
-    );
-  }
-
-  RegisterWithEmailAndPasswordPressd registerWithEmailAndPasswordPressd() {
-    return const RegisterWithEmailAndPasswordPressd();
-  }
-
-  SignInWithEmailAndPasswordPressd signInWithEmailAndPasswordPressd() {
-    return const SignInWithEmailAndPasswordPressd();
-  }
-
-  SignInWithGooglePressd signInWithGooglePressd() {
-    return const SignInWithGooglePressd();
-  }
-}
-
-/// @nodoc
-const $SignInEvent = _$SignInEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$SignInEvent {
@@ -58,11 +27,11 @@ mixin _$SignInEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? registerWithEmailAndPasswordPressd,
-    TResult Function()? signInWithEmailAndPasswordPressd,
-    TResult Function()? signInWithGooglePressd,
+    TResult? Function(String email)? emailChanged,
+    TResult? Function(String password)? passwordChanged,
+    TResult? Function()? registerWithEmailAndPasswordPressd,
+    TResult? Function()? signInWithEmailAndPasswordPressd,
+    TResult? Function()? signInWithGooglePressd,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -89,13 +58,13 @@ mixin _$SignInEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(EmailChanged value)? emailChanged,
-    TResult Function(PasswordChanged value)? passwordChanged,
-    TResult Function(RegisterWithEmailAndPasswordPressd value)?
+    TResult? Function(EmailChanged value)? emailChanged,
+    TResult? Function(PasswordChanged value)? passwordChanged,
+    TResult? Function(RegisterWithEmailAndPasswordPressd value)?
         registerWithEmailAndPasswordPressd,
-    TResult Function(SignInWithEmailAndPasswordPressd value)?
+    TResult? Function(SignInWithEmailAndPasswordPressd value)?
         signInWithEmailAndPasswordPressd,
-    TResult Function(SignInWithGooglePressd value)? signInWithGooglePressd,
+    TResult? Function(SignInWithGooglePressd value)? signInWithGooglePressd,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -116,42 +85,44 @@ mixin _$SignInEvent {
 abstract class $SignInEventCopyWith<$Res> {
   factory $SignInEventCopyWith(
           SignInEvent value, $Res Function(SignInEvent) then) =
-      _$SignInEventCopyWithImpl<$Res>;
+      _$SignInEventCopyWithImpl<$Res, SignInEvent>;
 }
 
 /// @nodoc
-class _$SignInEventCopyWithImpl<$Res> implements $SignInEventCopyWith<$Res> {
+class _$SignInEventCopyWithImpl<$Res, $Val extends SignInEvent>
+    implements $SignInEventCopyWith<$Res> {
   _$SignInEventCopyWithImpl(this._value, this._then);
 
-  final SignInEvent _value;
   // ignore: unused_field
-  final $Res Function(SignInEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $EmailChangedCopyWith<$Res> {
-  factory $EmailChangedCopyWith(
-          EmailChanged value, $Res Function(EmailChanged) then) =
-      _$EmailChangedCopyWithImpl<$Res>;
+abstract class _$$EmailChangedCopyWith<$Res> {
+  factory _$$EmailChangedCopyWith(
+          _$EmailChanged value, $Res Function(_$EmailChanged) then) =
+      __$$EmailChangedCopyWithImpl<$Res>;
+  @useResult
   $Res call({String email});
 }
 
 /// @nodoc
-class _$EmailChangedCopyWithImpl<$Res> extends _$SignInEventCopyWithImpl<$Res>
-    implements $EmailChangedCopyWith<$Res> {
-  _$EmailChangedCopyWithImpl(
-      EmailChanged _value, $Res Function(EmailChanged) _then)
-      : super(_value, (v) => _then(v as EmailChanged));
+class __$$EmailChangedCopyWithImpl<$Res>
+    extends _$SignInEventCopyWithImpl<$Res, _$EmailChanged>
+    implements _$$EmailChangedCopyWith<$Res> {
+  __$$EmailChangedCopyWithImpl(
+      _$EmailChanged _value, $Res Function(_$EmailChanged) _then)
+      : super(_value, _then);
 
-  @override
-  EmailChanged get _value => super._value as EmailChanged;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? email = freezed,
+    Object? email = null,
   }) {
-    return _then(EmailChanged(
-      email == freezed
+    return _then(_$EmailChanged(
+      null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
@@ -176,18 +147,18 @@ class _$EmailChanged implements EmailChanged {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is EmailChanged &&
-            const DeepCollectionEquality().equals(other.email, email));
+            other is _$EmailChanged &&
+            (identical(other.email, email) || other.email == email));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(email));
+  int get hashCode => Object.hash(runtimeType, email);
 
   @JsonKey(ignore: true)
   @override
-  $EmailChangedCopyWith<EmailChanged> get copyWith =>
-      _$EmailChangedCopyWithImpl<EmailChanged>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$EmailChangedCopyWith<_$EmailChanged> get copyWith =>
+      __$$EmailChangedCopyWithImpl<_$EmailChanged>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -204,11 +175,11 @@ class _$EmailChanged implements EmailChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? registerWithEmailAndPasswordPressd,
-    TResult Function()? signInWithEmailAndPasswordPressd,
-    TResult Function()? signInWithGooglePressd,
+    TResult? Function(String email)? emailChanged,
+    TResult? Function(String password)? passwordChanged,
+    TResult? Function()? registerWithEmailAndPasswordPressd,
+    TResult? Function()? signInWithEmailAndPasswordPressd,
+    TResult? Function()? signInWithGooglePressd,
   }) {
     return emailChanged?.call(email);
   }
@@ -247,13 +218,13 @@ class _$EmailChanged implements EmailChanged {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(EmailChanged value)? emailChanged,
-    TResult Function(PasswordChanged value)? passwordChanged,
-    TResult Function(RegisterWithEmailAndPasswordPressd value)?
+    TResult? Function(EmailChanged value)? emailChanged,
+    TResult? Function(PasswordChanged value)? passwordChanged,
+    TResult? Function(RegisterWithEmailAndPasswordPressd value)?
         registerWithEmailAndPasswordPressd,
-    TResult Function(SignInWithEmailAndPasswordPressd value)?
+    TResult? Function(SignInWithEmailAndPasswordPressd value)?
         signInWithEmailAndPasswordPressd,
-    TResult Function(SignInWithGooglePressd value)? signInWithGooglePressd,
+    TResult? Function(SignInWithGooglePressd value)? signInWithGooglePressd,
   }) {
     return emailChanged?.call(this);
   }
@@ -278,39 +249,38 @@ class _$EmailChanged implements EmailChanged {
 }
 
 abstract class EmailChanged implements SignInEvent {
-  const factory EmailChanged(String email) = _$EmailChanged;
+  const factory EmailChanged(final String email) = _$EmailChanged;
 
   String get email;
   @JsonKey(ignore: true)
-  $EmailChangedCopyWith<EmailChanged> get copyWith =>
+  _$$EmailChangedCopyWith<_$EmailChanged> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PasswordChangedCopyWith<$Res> {
-  factory $PasswordChangedCopyWith(
-          PasswordChanged value, $Res Function(PasswordChanged) then) =
-      _$PasswordChangedCopyWithImpl<$Res>;
+abstract class _$$PasswordChangedCopyWith<$Res> {
+  factory _$$PasswordChangedCopyWith(
+          _$PasswordChanged value, $Res Function(_$PasswordChanged) then) =
+      __$$PasswordChangedCopyWithImpl<$Res>;
+  @useResult
   $Res call({String password});
 }
 
 /// @nodoc
-class _$PasswordChangedCopyWithImpl<$Res>
-    extends _$SignInEventCopyWithImpl<$Res>
-    implements $PasswordChangedCopyWith<$Res> {
-  _$PasswordChangedCopyWithImpl(
-      PasswordChanged _value, $Res Function(PasswordChanged) _then)
-      : super(_value, (v) => _then(v as PasswordChanged));
+class __$$PasswordChangedCopyWithImpl<$Res>
+    extends _$SignInEventCopyWithImpl<$Res, _$PasswordChanged>
+    implements _$$PasswordChangedCopyWith<$Res> {
+  __$$PasswordChangedCopyWithImpl(
+      _$PasswordChanged _value, $Res Function(_$PasswordChanged) _then)
+      : super(_value, _then);
 
-  @override
-  PasswordChanged get _value => super._value as PasswordChanged;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? password = freezed,
+    Object? password = null,
   }) {
-    return _then(PasswordChanged(
-      password == freezed
+    return _then(_$PasswordChanged(
+      null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
@@ -335,18 +305,19 @@ class _$PasswordChanged implements PasswordChanged {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is PasswordChanged &&
-            const DeepCollectionEquality().equals(other.password, password));
+            other is _$PasswordChanged &&
+            (identical(other.password, password) ||
+                other.password == password));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(password));
+  int get hashCode => Object.hash(runtimeType, password);
 
   @JsonKey(ignore: true)
   @override
-  $PasswordChangedCopyWith<PasswordChanged> get copyWith =>
-      _$PasswordChangedCopyWithImpl<PasswordChanged>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PasswordChangedCopyWith<_$PasswordChanged> get copyWith =>
+      __$$PasswordChangedCopyWithImpl<_$PasswordChanged>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -363,11 +334,11 @@ class _$PasswordChanged implements PasswordChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? registerWithEmailAndPasswordPressd,
-    TResult Function()? signInWithEmailAndPasswordPressd,
-    TResult Function()? signInWithGooglePressd,
+    TResult? Function(String email)? emailChanged,
+    TResult? Function(String password)? passwordChanged,
+    TResult? Function()? registerWithEmailAndPasswordPressd,
+    TResult? Function()? signInWithEmailAndPasswordPressd,
+    TResult? Function()? signInWithGooglePressd,
   }) {
     return passwordChanged?.call(password);
   }
@@ -406,13 +377,13 @@ class _$PasswordChanged implements PasswordChanged {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(EmailChanged value)? emailChanged,
-    TResult Function(PasswordChanged value)? passwordChanged,
-    TResult Function(RegisterWithEmailAndPasswordPressd value)?
+    TResult? Function(EmailChanged value)? emailChanged,
+    TResult? Function(PasswordChanged value)? passwordChanged,
+    TResult? Function(RegisterWithEmailAndPasswordPressd value)?
         registerWithEmailAndPasswordPressd,
-    TResult Function(SignInWithEmailAndPasswordPressd value)?
+    TResult? Function(SignInWithEmailAndPasswordPressd value)?
         signInWithEmailAndPasswordPressd,
-    TResult Function(SignInWithGooglePressd value)? signInWithGooglePressd,
+    TResult? Function(SignInWithGooglePressd value)? signInWithGooglePressd,
   }) {
     return passwordChanged?.call(this);
   }
@@ -437,34 +408,31 @@ class _$PasswordChanged implements PasswordChanged {
 }
 
 abstract class PasswordChanged implements SignInEvent {
-  const factory PasswordChanged(String password) = _$PasswordChanged;
+  const factory PasswordChanged(final String password) = _$PasswordChanged;
 
   String get password;
   @JsonKey(ignore: true)
-  $PasswordChangedCopyWith<PasswordChanged> get copyWith =>
+  _$$PasswordChangedCopyWith<_$PasswordChanged> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $RegisterWithEmailAndPasswordPressdCopyWith<$Res> {
-  factory $RegisterWithEmailAndPasswordPressdCopyWith(
-          RegisterWithEmailAndPasswordPressd value,
-          $Res Function(RegisterWithEmailAndPasswordPressd) then) =
-      _$RegisterWithEmailAndPasswordPressdCopyWithImpl<$Res>;
+abstract class _$$RegisterWithEmailAndPasswordPressdCopyWith<$Res> {
+  factory _$$RegisterWithEmailAndPasswordPressdCopyWith(
+          _$RegisterWithEmailAndPasswordPressd value,
+          $Res Function(_$RegisterWithEmailAndPasswordPressd) then) =
+      __$$RegisterWithEmailAndPasswordPressdCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$RegisterWithEmailAndPasswordPressdCopyWithImpl<$Res>
-    extends _$SignInEventCopyWithImpl<$Res>
-    implements $RegisterWithEmailAndPasswordPressdCopyWith<$Res> {
-  _$RegisterWithEmailAndPasswordPressdCopyWithImpl(
-      RegisterWithEmailAndPasswordPressd _value,
-      $Res Function(RegisterWithEmailAndPasswordPressd) _then)
-      : super(_value, (v) => _then(v as RegisterWithEmailAndPasswordPressd));
-
-  @override
-  RegisterWithEmailAndPasswordPressd get _value =>
-      super._value as RegisterWithEmailAndPasswordPressd;
+class __$$RegisterWithEmailAndPasswordPressdCopyWithImpl<$Res>
+    extends _$SignInEventCopyWithImpl<$Res,
+        _$RegisterWithEmailAndPasswordPressd>
+    implements _$$RegisterWithEmailAndPasswordPressdCopyWith<$Res> {
+  __$$RegisterWithEmailAndPasswordPressdCopyWithImpl(
+      _$RegisterWithEmailAndPasswordPressd _value,
+      $Res Function(_$RegisterWithEmailAndPasswordPressd) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -482,7 +450,7 @@ class _$RegisterWithEmailAndPasswordPressd
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is RegisterWithEmailAndPasswordPressd);
+            other is _$RegisterWithEmailAndPasswordPressd);
   }
 
   @override
@@ -503,11 +471,11 @@ class _$RegisterWithEmailAndPasswordPressd
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? registerWithEmailAndPasswordPressd,
-    TResult Function()? signInWithEmailAndPasswordPressd,
-    TResult Function()? signInWithGooglePressd,
+    TResult? Function(String email)? emailChanged,
+    TResult? Function(String password)? passwordChanged,
+    TResult? Function()? registerWithEmailAndPasswordPressd,
+    TResult? Function()? signInWithEmailAndPasswordPressd,
+    TResult? Function()? signInWithGooglePressd,
   }) {
     return registerWithEmailAndPasswordPressd?.call();
   }
@@ -546,13 +514,13 @@ class _$RegisterWithEmailAndPasswordPressd
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(EmailChanged value)? emailChanged,
-    TResult Function(PasswordChanged value)? passwordChanged,
-    TResult Function(RegisterWithEmailAndPasswordPressd value)?
+    TResult? Function(EmailChanged value)? emailChanged,
+    TResult? Function(PasswordChanged value)? passwordChanged,
+    TResult? Function(RegisterWithEmailAndPasswordPressd value)?
         registerWithEmailAndPasswordPressd,
-    TResult Function(SignInWithEmailAndPasswordPressd value)?
+    TResult? Function(SignInWithEmailAndPasswordPressd value)?
         signInWithEmailAndPasswordPressd,
-    TResult Function(SignInWithGooglePressd value)? signInWithGooglePressd,
+    TResult? Function(SignInWithGooglePressd value)? signInWithGooglePressd,
   }) {
     return registerWithEmailAndPasswordPressd?.call(this);
   }
@@ -582,25 +550,21 @@ abstract class RegisterWithEmailAndPasswordPressd implements SignInEvent {
 }
 
 /// @nodoc
-abstract class $SignInWithEmailAndPasswordPressdCopyWith<$Res> {
-  factory $SignInWithEmailAndPasswordPressdCopyWith(
-          SignInWithEmailAndPasswordPressd value,
-          $Res Function(SignInWithEmailAndPasswordPressd) then) =
-      _$SignInWithEmailAndPasswordPressdCopyWithImpl<$Res>;
+abstract class _$$SignInWithEmailAndPasswordPressdCopyWith<$Res> {
+  factory _$$SignInWithEmailAndPasswordPressdCopyWith(
+          _$SignInWithEmailAndPasswordPressd value,
+          $Res Function(_$SignInWithEmailAndPasswordPressd) then) =
+      __$$SignInWithEmailAndPasswordPressdCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$SignInWithEmailAndPasswordPressdCopyWithImpl<$Res>
-    extends _$SignInEventCopyWithImpl<$Res>
-    implements $SignInWithEmailAndPasswordPressdCopyWith<$Res> {
-  _$SignInWithEmailAndPasswordPressdCopyWithImpl(
-      SignInWithEmailAndPasswordPressd _value,
-      $Res Function(SignInWithEmailAndPasswordPressd) _then)
-      : super(_value, (v) => _then(v as SignInWithEmailAndPasswordPressd));
-
-  @override
-  SignInWithEmailAndPasswordPressd get _value =>
-      super._value as SignInWithEmailAndPasswordPressd;
+class __$$SignInWithEmailAndPasswordPressdCopyWithImpl<$Res>
+    extends _$SignInEventCopyWithImpl<$Res, _$SignInWithEmailAndPasswordPressd>
+    implements _$$SignInWithEmailAndPasswordPressdCopyWith<$Res> {
+  __$$SignInWithEmailAndPasswordPressdCopyWithImpl(
+      _$SignInWithEmailAndPasswordPressd _value,
+      $Res Function(_$SignInWithEmailAndPasswordPressd) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -618,7 +582,7 @@ class _$SignInWithEmailAndPasswordPressd
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is SignInWithEmailAndPasswordPressd);
+            other is _$SignInWithEmailAndPasswordPressd);
   }
 
   @override
@@ -639,11 +603,11 @@ class _$SignInWithEmailAndPasswordPressd
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? registerWithEmailAndPasswordPressd,
-    TResult Function()? signInWithEmailAndPasswordPressd,
-    TResult Function()? signInWithGooglePressd,
+    TResult? Function(String email)? emailChanged,
+    TResult? Function(String password)? passwordChanged,
+    TResult? Function()? registerWithEmailAndPasswordPressd,
+    TResult? Function()? signInWithEmailAndPasswordPressd,
+    TResult? Function()? signInWithGooglePressd,
   }) {
     return signInWithEmailAndPasswordPressd?.call();
   }
@@ -682,13 +646,13 @@ class _$SignInWithEmailAndPasswordPressd
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(EmailChanged value)? emailChanged,
-    TResult Function(PasswordChanged value)? passwordChanged,
-    TResult Function(RegisterWithEmailAndPasswordPressd value)?
+    TResult? Function(EmailChanged value)? emailChanged,
+    TResult? Function(PasswordChanged value)? passwordChanged,
+    TResult? Function(RegisterWithEmailAndPasswordPressd value)?
         registerWithEmailAndPasswordPressd,
-    TResult Function(SignInWithEmailAndPasswordPressd value)?
+    TResult? Function(SignInWithEmailAndPasswordPressd value)?
         signInWithEmailAndPasswordPressd,
-    TResult Function(SignInWithGooglePressd value)? signInWithGooglePressd,
+    TResult? Function(SignInWithGooglePressd value)? signInWithGooglePressd,
   }) {
     return signInWithEmailAndPasswordPressd?.call(this);
   }
@@ -718,22 +682,19 @@ abstract class SignInWithEmailAndPasswordPressd implements SignInEvent {
 }
 
 /// @nodoc
-abstract class $SignInWithGooglePressdCopyWith<$Res> {
-  factory $SignInWithGooglePressdCopyWith(SignInWithGooglePressd value,
-          $Res Function(SignInWithGooglePressd) then) =
-      _$SignInWithGooglePressdCopyWithImpl<$Res>;
+abstract class _$$SignInWithGooglePressdCopyWith<$Res> {
+  factory _$$SignInWithGooglePressdCopyWith(_$SignInWithGooglePressd value,
+          $Res Function(_$SignInWithGooglePressd) then) =
+      __$$SignInWithGooglePressdCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$SignInWithGooglePressdCopyWithImpl<$Res>
-    extends _$SignInEventCopyWithImpl<$Res>
-    implements $SignInWithGooglePressdCopyWith<$Res> {
-  _$SignInWithGooglePressdCopyWithImpl(SignInWithGooglePressd _value,
-      $Res Function(SignInWithGooglePressd) _then)
-      : super(_value, (v) => _then(v as SignInWithGooglePressd));
-
-  @override
-  SignInWithGooglePressd get _value => super._value as SignInWithGooglePressd;
+class __$$SignInWithGooglePressdCopyWithImpl<$Res>
+    extends _$SignInEventCopyWithImpl<$Res, _$SignInWithGooglePressd>
+    implements _$$SignInWithGooglePressdCopyWith<$Res> {
+  __$$SignInWithGooglePressdCopyWithImpl(_$SignInWithGooglePressd _value,
+      $Res Function(_$SignInWithGooglePressd) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -749,7 +710,7 @@ class _$SignInWithGooglePressd implements SignInWithGooglePressd {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is SignInWithGooglePressd);
+        (other.runtimeType == runtimeType && other is _$SignInWithGooglePressd);
   }
 
   @override
@@ -770,11 +731,11 @@ class _$SignInWithGooglePressd implements SignInWithGooglePressd {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String email)? emailChanged,
-    TResult Function(String password)? passwordChanged,
-    TResult Function()? registerWithEmailAndPasswordPressd,
-    TResult Function()? signInWithEmailAndPasswordPressd,
-    TResult Function()? signInWithGooglePressd,
+    TResult? Function(String email)? emailChanged,
+    TResult? Function(String password)? passwordChanged,
+    TResult? Function()? registerWithEmailAndPasswordPressd,
+    TResult? Function()? signInWithEmailAndPasswordPressd,
+    TResult? Function()? signInWithGooglePressd,
   }) {
     return signInWithGooglePressd?.call();
   }
@@ -813,13 +774,13 @@ class _$SignInWithGooglePressd implements SignInWithGooglePressd {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(EmailChanged value)? emailChanged,
-    TResult Function(PasswordChanged value)? passwordChanged,
-    TResult Function(RegisterWithEmailAndPasswordPressd value)?
+    TResult? Function(EmailChanged value)? emailChanged,
+    TResult? Function(PasswordChanged value)? passwordChanged,
+    TResult? Function(RegisterWithEmailAndPasswordPressd value)?
         registerWithEmailAndPasswordPressd,
-    TResult Function(SignInWithEmailAndPasswordPressd value)?
+    TResult? Function(SignInWithEmailAndPasswordPressd value)?
         signInWithEmailAndPasswordPressd,
-    TResult Function(SignInWithGooglePressd value)? signInWithGooglePressd,
+    TResult? Function(SignInWithGooglePressd value)? signInWithGooglePressd,
   }) {
     return signInWithGooglePressd?.call(this);
   }
@@ -848,29 +809,6 @@ abstract class SignInWithGooglePressd implements SignInEvent {
 }
 
 /// @nodoc
-class _$SignInStateTearOff {
-  const _$SignInStateTearOff();
-
-  _SignInState call(
-      {required EmailAddress email,
-      required Password password,
-      required AutovalidateMode autoValidateMode,
-      required bool isSubmitting,
-      required Option<Either<AuthFailure, Unit>> authFailureOrSuccess}) {
-    return _SignInState(
-      email: email,
-      password: password,
-      autoValidateMode: autoValidateMode,
-      isSubmitting: isSubmitting,
-      authFailureOrSuccess: authFailureOrSuccess,
-    );
-  }
-}
-
-/// @nodoc
-const $SignInState = _$SignInStateTearOff();
-
-/// @nodoc
 mixin _$SignInState {
   EmailAddress get email => throw _privateConstructorUsedError;
   Password get password => throw _privateConstructorUsedError;
@@ -888,7 +826,8 @@ mixin _$SignInState {
 abstract class $SignInStateCopyWith<$Res> {
   factory $SignInStateCopyWith(
           SignInState value, $Res Function(SignInState) then) =
-      _$SignInStateCopyWithImpl<$Res>;
+      _$SignInStateCopyWithImpl<$Res, SignInState>;
+  @useResult
   $Res call(
       {EmailAddress email,
       Password password,
@@ -898,53 +837,57 @@ abstract class $SignInStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SignInStateCopyWithImpl<$Res> implements $SignInStateCopyWith<$Res> {
+class _$SignInStateCopyWithImpl<$Res, $Val extends SignInState>
+    implements $SignInStateCopyWith<$Res> {
   _$SignInStateCopyWithImpl(this._value, this._then);
 
-  final SignInState _value;
   // ignore: unused_field
-  final $Res Function(SignInState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? email = freezed,
-    Object? password = freezed,
-    Object? autoValidateMode = freezed,
-    Object? isSubmitting = freezed,
-    Object? authFailureOrSuccess = freezed,
+    Object? email = null,
+    Object? password = null,
+    Object? autoValidateMode = null,
+    Object? isSubmitting = null,
+    Object? authFailureOrSuccess = null,
   }) {
     return _then(_value.copyWith(
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as EmailAddress,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as Password,
-      autoValidateMode: autoValidateMode == freezed
+      autoValidateMode: null == autoValidateMode
           ? _value.autoValidateMode
           : autoValidateMode // ignore: cast_nullable_to_non_nullable
               as AutovalidateMode,
-      isSubmitting: isSubmitting == freezed
+      isSubmitting: null == isSubmitting
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
               as bool,
-      authFailureOrSuccess: authFailureOrSuccess == freezed
+      authFailureOrSuccess: null == authFailureOrSuccess
           ? _value.authFailureOrSuccess
           : authFailureOrSuccess // ignore: cast_nullable_to_non_nullable
               as Option<Either<AuthFailure, Unit>>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$SignInStateCopyWith<$Res>
+abstract class _$$_SignInStateCopyWith<$Res>
     implements $SignInStateCopyWith<$Res> {
-  factory _$SignInStateCopyWith(
-          _SignInState value, $Res Function(_SignInState) then) =
-      __$SignInStateCopyWithImpl<$Res>;
+  factory _$$_SignInStateCopyWith(
+          _$_SignInState value, $Res Function(_$_SignInState) then) =
+      __$$_SignInStateCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {EmailAddress email,
       Password password,
@@ -954,41 +897,40 @@ abstract class _$SignInStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$SignInStateCopyWithImpl<$Res> extends _$SignInStateCopyWithImpl<$Res>
-    implements _$SignInStateCopyWith<$Res> {
-  __$SignInStateCopyWithImpl(
-      _SignInState _value, $Res Function(_SignInState) _then)
-      : super(_value, (v) => _then(v as _SignInState));
+class __$$_SignInStateCopyWithImpl<$Res>
+    extends _$SignInStateCopyWithImpl<$Res, _$_SignInState>
+    implements _$$_SignInStateCopyWith<$Res> {
+  __$$_SignInStateCopyWithImpl(
+      _$_SignInState _value, $Res Function(_$_SignInState) _then)
+      : super(_value, _then);
 
-  @override
-  _SignInState get _value => super._value as _SignInState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? email = freezed,
-    Object? password = freezed,
-    Object? autoValidateMode = freezed,
-    Object? isSubmitting = freezed,
-    Object? authFailureOrSuccess = freezed,
+    Object? email = null,
+    Object? password = null,
+    Object? autoValidateMode = null,
+    Object? isSubmitting = null,
+    Object? authFailureOrSuccess = null,
   }) {
-    return _then(_SignInState(
-      email: email == freezed
+    return _then(_$_SignInState(
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as EmailAddress,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as Password,
-      autoValidateMode: autoValidateMode == freezed
+      autoValidateMode: null == autoValidateMode
           ? _value.autoValidateMode
           : autoValidateMode // ignore: cast_nullable_to_non_nullable
               as AutovalidateMode,
-      isSubmitting: isSubmitting == freezed
+      isSubmitting: null == isSubmitting
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
               as bool,
-      authFailureOrSuccess: authFailureOrSuccess == freezed
+      authFailureOrSuccess: null == authFailureOrSuccess
           ? _value.authFailureOrSuccess
           : authFailureOrSuccess // ignore: cast_nullable_to_non_nullable
               as Option<Either<AuthFailure, Unit>>,
@@ -1026,40 +968,37 @@ class _$_SignInState implements _SignInState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _SignInState &&
-            const DeepCollectionEquality().equals(other.email, email) &&
-            const DeepCollectionEquality().equals(other.password, password) &&
-            const DeepCollectionEquality()
-                .equals(other.autoValidateMode, autoValidateMode) &&
-            const DeepCollectionEquality()
-                .equals(other.isSubmitting, isSubmitting) &&
-            const DeepCollectionEquality()
-                .equals(other.authFailureOrSuccess, authFailureOrSuccess));
+            other is _$_SignInState &&
+            (identical(other.email, email) || other.email == email) &&
+            (identical(other.password, password) ||
+                other.password == password) &&
+            (identical(other.autoValidateMode, autoValidateMode) ||
+                other.autoValidateMode == autoValidateMode) &&
+            (identical(other.isSubmitting, isSubmitting) ||
+                other.isSubmitting == isSubmitting) &&
+            (identical(other.authFailureOrSuccess, authFailureOrSuccess) ||
+                other.authFailureOrSuccess == authFailureOrSuccess));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(email),
-      const DeepCollectionEquality().hash(password),
-      const DeepCollectionEquality().hash(autoValidateMode),
-      const DeepCollectionEquality().hash(isSubmitting),
-      const DeepCollectionEquality().hash(authFailureOrSuccess));
+  int get hashCode => Object.hash(runtimeType, email, password,
+      autoValidateMode, isSubmitting, authFailureOrSuccess);
 
   @JsonKey(ignore: true)
   @override
-  _$SignInStateCopyWith<_SignInState> get copyWith =>
-      __$SignInStateCopyWithImpl<_SignInState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_SignInStateCopyWith<_$_SignInState> get copyWith =>
+      __$$_SignInStateCopyWithImpl<_$_SignInState>(this, _$identity);
 }
 
 abstract class _SignInState implements SignInState {
   const factory _SignInState(
-          {required EmailAddress email,
-          required Password password,
-          required AutovalidateMode autoValidateMode,
-          required bool isSubmitting,
-          required Option<Either<AuthFailure, Unit>> authFailureOrSuccess}) =
-      _$_SignInState;
+      {required final EmailAddress email,
+      required final Password password,
+      required final AutovalidateMode autoValidateMode,
+      required final bool isSubmitting,
+      required final Option<Either<AuthFailure, Unit>>
+          authFailureOrSuccess}) = _$_SignInState;
 
   @override
   EmailAddress get email;
@@ -1073,6 +1012,6 @@ abstract class _SignInState implements SignInState {
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccess;
   @override
   @JsonKey(ignore: true)
-  _$SignInStateCopyWith<_SignInState> get copyWith =>
+  _$$_SignInStateCopyWith<_$_SignInState> get copyWith =>
       throw _privateConstructorUsedError;
 }

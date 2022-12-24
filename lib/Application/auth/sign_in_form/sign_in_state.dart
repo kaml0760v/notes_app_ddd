@@ -6,7 +6,7 @@ part of 'sign_in_bloc.dart';
 // class SignInInitial extends SignInState {}
 
 @freezed
-abstract class SignInState with _$SignInState {
+class SignInState with _$SignInState {
   const factory SignInState({
     required EmailAddress email,
     required Password password,

@@ -2,10 +2,11 @@ import 'package:auto_route/auto_route.dart';
 import 'package:ddd_training/Application/notes/note_actor/note_actor_bloc.dart';
 import 'package:ddd_training/Domain/notes/note.dart';
 import 'package:ddd_training/Domain/notes/todo_item.dart';
-import 'package:ddd_training/Presentation/routes/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:kt_dart/collection.dart';
+
+import '../../../routes/app_router.dart';
 
 class NoteCardWidget extends StatelessWidget {
   const NoteCardWidget({Key? key, required this.note}) : super(key: key);
@@ -16,6 +17,9 @@ class NoteCardWidget extends StatelessWidget {
       color: note.color.getOrCrash(),
       child: InkWell(
         onTap: () {
+          // Navigator.pushNamed(context, NoteFormPage.routes,
+          //     arguments: {"editedNote": note});
+
           AutoRouter.of(context).push(NoteFormRoute(editedNote: note));
         },
         onLongPress: () {
@@ -69,11 +73,12 @@ class NoteCardWidget extends StatelessWidget {
           ),
           actions: [
             TextButton(
-                onPressed: () => AutoRouter.of(ctx).pop(),
+                onPressed: () => Navigator.pop(context),
                 child: const Text("Cancel")),
             TextButton(
                 onPressed: () {
                   noteActorBloc.add(NoteActorEvent.deleted(note));
+                  // Navigator.pop(context);
                   AutoRouter.of(ctx).pop();
                 },
                 child: const Text("Delete")),

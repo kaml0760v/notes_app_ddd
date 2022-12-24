@@ -11,5 +11,5 @@ void main() async {
   .then((value) => print("connected " + value.options.asMap.toString()))
   .catchError((e) => print(e.toString()));
   configureInjection(Environment.prod);
-  runApp(AppWidget());
+  runApp( AppWidget());
 }

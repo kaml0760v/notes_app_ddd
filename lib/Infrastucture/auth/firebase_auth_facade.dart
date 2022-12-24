@@ -5,7 +5,6 @@ import 'package:ddd_training/Domain/auth/user.dart' as user;
 import 'package:ddd_training/Domain/auth/value_objects.dart';
 import 'package:ddd_training/Infrastucture/auth/firebase_user_mapper.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/services.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:injectable/injectable.dart';
 
@@ -57,7 +56,6 @@ class FirebaseAuthFacede implements IAuthFacade {
 
   @override
   Future<Either<AuthFailure, Unit>> signInWithGoogle() async {
-    print("sign in with google");
     try {
       final googleUser = await _googleSignIn.signIn();
       if (googleUser == null) {

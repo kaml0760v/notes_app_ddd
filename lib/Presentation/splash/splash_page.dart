@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SplashPage extends StatelessWidget {
+  static String routes = '/';
   const SplashPage({Key? key}) : super(key: key);
 
   @override
@@ -13,10 +14,12 @@ class SplashPage extends StatelessWidget {
         state.map(
           initial: (_) {},
           authenticated: (e) {
+            // Navigator.pushReplacementNamed(context, NotesOverviewPage.routes);
+
             AutoRouter.of(context).replaceNamed('/notes-overview-page');
-            print("authenticated");
           },
           unauthenticated: (e) {
+            // Navigator.pushReplacementNamed(context, SignInPage.routes);
             AutoRouter.of(context).replaceNamed('/sign-in-page');
           },
         );

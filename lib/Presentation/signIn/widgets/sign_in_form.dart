@@ -45,6 +45,7 @@ class SignInForm extends StatelessWidget {
                             orElse: () => null,
                           ),
                       (_) => null);
+                  return null;
                 },
                 onChanged: (value) {
                   context
@@ -71,6 +72,8 @@ class SignInForm extends StatelessWidget {
                             orElse: () => null,
                           ),
                       (_) => null);
+
+                  return;
                 },
                 onChanged: (value) {
                   context
@@ -136,6 +139,9 @@ class SignInForm extends StatelessWidget {
                     ),
                   ),
                   (r) {
+                    // Navigator.pushReplacementNamed(
+                    //     context, NotesOverviewPage.routes);
+
                     AutoRouter.of(context).replaceNamed('/notes-overview-page');
                     context
                         .read<AuthBloc>()

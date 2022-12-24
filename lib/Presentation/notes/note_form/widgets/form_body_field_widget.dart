@@ -38,6 +38,7 @@ class FormBodyFieldWidget extends HookWidget {
                           "can not enter more then 1000 character",
                     ),
                 (r) => r);
+            return;
           },
         ),
       ),
